@@ -83,8 +83,4 @@ mkdir -p $HOME/.config
 cp -r nvim $HOME/.config
 install_nvim
 
-echo ">>>>>>>>Installing zshrc plug-ins<<<<<<<<"
-setup_plugins
-echo ">>>>>>>>Installing zshrc plug-ins<<<<<<<<"
-
 
