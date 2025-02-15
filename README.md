@@ -10,7 +10,7 @@ The installation script will install some simplistic configurations of:
 ## Install
 1. Run the installation script. Answer `Y` to all prompts. Log out of the shell when first dropped into Zsh.
 ```
-git clone https://github.com/KevinRSX/home && cd home && ./install.sh
+git clone https://github.com/JHSUYU/setup.git && cd setup && ./install.sh
 ``` 
 2. Log out of the shell and log back in again.
 3. Enter Vim and `:PlugInstall`
