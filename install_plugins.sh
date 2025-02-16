@@ -4,6 +4,8 @@ setup_plugins() {
           sed -i "s/plugins=(git)/plugins=(\n    git\n    z\n    zsh-autosuggestions\n    zsh-syntax-highlighting\n)/" ~/.zshrc
           git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
           git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+          echo 'export CASSANDRA_HOME=$HOME/cassandra' >> ~/.zshrc
+          echo 'export PATH=$PATH:$CASSANDRA_HOME/bin' >> ~/.zshrc
           source ~/.zshrc
       '
 }
