@@ -66,21 +66,21 @@ cp .zshrc $HOME/.zshrc
 cp .oh-my-zsh/kevin.zsh-theme $HOME/.oh-my-zsh/themes/
 install_omz_plugin
 
-
-echo ">>>>>>>>Installing TMUX<<<<<<<<"
-# install_tmux
-install_tpm
-cp .tmux.conf $HOME/.tmux.conf
-
-
-echo ">>>>>>>>Installing vim<<<<<<<<"
-install_vim
-cp .vimrc $HOME/.vimrc
-echo "Press :PlugInstall in vim to activate the plug-ins"
-
-echo ">>>>>>>>Installing nvim<<<<<<<<"
-mkdir -p $HOME/.config
-cp -r nvim $HOME/.config
-install_nvim
+#
+#echo ">>>>>>>>Installing TMUX<<<<<<<<"
+## install_tmux
+#install_tpm
+#cp .tmux.conf $HOME/.tmux.conf
+#
+#
+#echo ">>>>>>>>Installing vim<<<<<<<<"
+#install_vim
+#cp .vimrc $HOME/.vimrc
+#echo "Press :PlugInstall in vim to activate the plug-ins"
+#
+#echo ">>>>>>>>Installing nvim<<<<<<<<"
+#mkdir -p $HOME/.config
+#cp -r nvim $HOME/.config
+#install_nvim
 
 
