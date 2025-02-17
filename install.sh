@@ -82,6 +82,6 @@ echo ">>>>>>>>Installing nvim<<<<<<<<"
 mkdir -p $HOME/.config
 cp -r nvim $HOME/.config
 install_nvim
-sed -i 's/plugins=(git)/plugins=(\n    git\n    z\n    zsh-autosuggestions\n    zsh-syntax-highlighting\n)/' ~/.zshrc
+setup_plugins
 
 
