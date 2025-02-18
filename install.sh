@@ -12,6 +12,7 @@ install_omz_plugin() {
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
   git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
+  sed -i 's/plugins=(git)/plugins=(\n    git\n    z\n    zsh-autosuggestions\n    zsh-syntax-highlighting\n)/' ~/.zshrc
 }
 
 install_tmux() {
@@ -82,6 +83,5 @@ echo ">>>>>>>>Installing nvim<<<<<<<<"
 mkdir -p $HOME/.config
 cp -r nvim $HOME/.config
 install_nvim
-setup_plugins
 
 
